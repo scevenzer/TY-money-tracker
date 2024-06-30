@@ -1,10 +1,10 @@
 def save_record(stickers, description, record_type):
-  data_file = "sticker_tracker_data.txt"  # 파일 이름을 명확하게 변경
+  data_file = "data/sticker_tracker_data.txt"  # 파일 이름을 명확하게 변경
   with open(data_file, 'a', encoding='utf-8') as f:
     f.write(f"{record_type}: {stickers} 개, 내용: {description}\n")
 
 def load_saved_records():
-  data_file = "sticker_tracker_data.txt"
+  data_file = "data/sticker_tracker_data.txt"
   try:
     with open(data_file, 'r', encoding='utf-8') as f:
       return f.readlines()

@@ -3,7 +3,7 @@ import os
 
 class RewardData:
   def __init__(self):
-    self.filename = "rewards.json"
+    self.filename = "data/rewards.json"
     self.default_rewards = [
       {"이름": "포켓몬 카드", "스티커 개수": 5, "소진 여부": "없음"},
       {"이름": "건담", "스티커 개수": 30, "소진 여부": "소진"},

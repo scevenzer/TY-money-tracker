@@ -10,7 +10,7 @@ class RewardManager:
 
   def load_rewards(self):
     try:
-      with open("rewards.json", "r") as f:
+      with open("data/rewards.json", "r") as f:
         self.rewards = json.load(f)
     except FileNotFoundError:
       self.rewards = [
@@ -24,7 +24,7 @@ class RewardManager:
       self.save_rewards()
 
   def save_rewards(self):
-    with open("rewards.json", "w") as f:
+    with open("data/rewards.json", "w") as f:
       json.dump(self.rewards, f, indent=4)
 
   def show_reward_popup(self):
